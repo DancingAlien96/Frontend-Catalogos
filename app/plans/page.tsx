@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import { publicPlanApi } from '@/src/lib/api';
 import Link from 'next/link';
