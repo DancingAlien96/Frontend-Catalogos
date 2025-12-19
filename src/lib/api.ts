@@ -191,3 +191,9 @@ export const catalogApi = {
   getProduct: (slug: string, productId: number) => publicApi.get<PublicProduct>(`/api/public/catalog/${slug}/product/${productId}`),
   getProductsByCategory: (slug: string, categorySlug: string) => publicApi.get<PublicCategoryProducts>(`/api/public/catalog/${slug}/category/${categorySlug}`),
 };
+
+// Public signup
+export const publicAuthApi = {
+  signup: (data: { email: string; password: string; store_name: string; slug?: string }) =>
+    publicApi.post('/api/public/signup', data),
+};
