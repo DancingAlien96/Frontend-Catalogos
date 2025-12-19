@@ -197,3 +197,7 @@ export const publicAuthApi = {
   signup: (data: { email: string; password: string; store_name: string; slug?: string }) =>
     publicApi.post('/api/public/signup', data),
 };
+
+export const publicPlanApi = {
+  getAll: () => publicApi.get('/api/public/plans'),
+};
